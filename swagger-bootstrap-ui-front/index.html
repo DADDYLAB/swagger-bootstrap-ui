@@ -468,7 +468,13 @@
             <span class="input-group-btn">
                 <button class="btn btn-default btn-info" type="button">{{methodType}}</button>
             </span>
-            <div class="input-group-btn" style="width: 260px;" >
+            <div class="input-group-btn" style="width: 80px;" >
+                    <select class="form-control" id="isHttp" >
+                                    <option>http://</option>
+                                    <option>https://</option>
+                     </select>
+             </div> 
+            <div class="input-group-btn" style="width: 180px;" >
                     <select class="form-control" id="hostId" >
                             <%if(host!=null && host.length>0){ %>
                                 <% for( a = 0; a < host.length ; a++ ) {var param=host[a]; %>
@@ -476,8 +482,6 @@
                             <%}}%>
                      </select>
              </div> 
-            
-
             <input type="text" id="txtreqUrl{{id}}" data-originalurl="<%=originalUrl%>" class="form-control" value="<%=url%>">
             <span class="input-group-btn">
                 <button  class="btn btn-default btn-primary btnRequest" id="btnRequest{{id}}" type="button">{{i18n.debug.send}}</button>

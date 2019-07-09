@@ -3,7 +3,7 @@ html {
 }
 .sbu-header{
     height: 10%;
-    background-color: #4887bd;
+    background-color: #32b496;
     color: white;
     line-height: 60px;
     vertical-align: middle;
@@ -80,7 +80,7 @@ html {
     width: 310px;
     margin-top: 0px;
     position: fixed;
-    background: #337ab7;
+    background: #32b496;
     /*height: 100%;*/
     transition: all 0.2s;
 }
@@ -131,7 +131,7 @@ html {
 
 .nav-list>li.active>a, .nav-list>li.active>a:hover, .nav-list>li.active>a:focus, .nav-list>li.active>a:active {
     background-color: #fff;
-    color: #2b7dbc;
+    color: #32b496;
     font-weight: bold;
     font-size: 13px;
 }
@@ -153,7 +153,7 @@ html {
 
 .nav-list>li.open>a {
     background-color: #fafafa;
-    color: #1963aa;
+    color: #32b496;
 }
 
 .nav-list>li>a>[class*="icon-"]:first-child {
@@ -189,7 +189,7 @@ html {
 }
 
 .label-primary, .badge-primary {
-    background-color: #428bca!important;
+    background-color: #32b496!important;
 }
 .badge {
     text-shadow: none;
@@ -201,7 +201,7 @@ html {
 
 }
 .badge-primary, .label-primary {
-    background-color: #1ab394;
+    background-color: #32b496;
 }
 .nav-list>li>.submenu:before {
     content: "";
@@ -226,7 +226,7 @@ html {
     top: -1px;
     bottom: 0;
     z-index: 1;
-    border: 2px solid #2b7dbc;
+    border: 2px solid #32b496;
     border-width: 0 2px 0 0;
 }
 .nav-list>li .submenu {
@@ -340,7 +340,7 @@ code {
 }
 
 .navy-bg {
-    background-color: #2e5db7;
+    background-color: #32b496;
     color: #fff;
 }
 
@@ -384,7 +384,7 @@ code {
 }
 
 /*Ã¦ÂÅ“Ã§Â´Â¢Ã¦Â¡â€ 8*/
-.bar8 {background: #4887bd;}
+.bar8 {background: #32b496;}
 .bar8 form {
     height: 42px;
 }
@@ -454,7 +454,7 @@ code {
 }
 
 .menu-url-post{
-    color: #61affd;
+    color: #32b496;
     text-align: left;
     /* width: 64px; */
     display: inline-block;

@@ -2273,9 +2273,10 @@
             var queryStringParameterFlag=false;
             var queryStringParameterArr=new Array();
 
+           var curHttp=$('#isHttp option:selected') .val();
            var curHostval=$('#hostId option:selected') .val();
-           curHostval = "http://"+curHostval
-           console.log(curHostval,"这是当前请求的host");
+           curServeHost = curHttp+curHostval
+           console.log(curServeHost,"这是当前请求的host");
 
             paramBody.find("tr").each(function () {
                 var paramtr=$(this);
@@ -2581,9 +2582,9 @@
                 }
                 that.log(sendParams)
                 that.log($.getStringValue(apiInfo.methodType))
-                console.log(curHostval+url,"请求地址3")
+                console.log(curServeHost+url,"请求地址1")
                 axios.request({
-                    url:curHostval+url,
+                    url:curServeHost+url,
                     headers:headerparams,
                     method:$.getStringValue(apiInfo.methodType),
                     data:reqdata,
@@ -2670,9 +2671,9 @@
             }else{
                 if(form.length>0||formRequest){
                     that.log("form submit------------------------------------------------")
-                    console.log(curHostval+url,"请求地址1")
+                    console.log(curServeHost+url,"请求地址2")
                     axios.request({
-                        url:curHostval+url,
+                        url:curServeHost+url,
                         headers:headerparams,
                         method:$.getStringValue(apiInfo.methodType),
                         data:formData,
@@ -2716,9 +2717,9 @@
                     //that.log($.getStringValue(apiInfo.methodType))
 
                     //headerparams["Content-Type"]=contType;
-                    console.log(curHostval+url,"请求地址2")
+                    console.log(curServeHost+url,"请求地址3")
                     $.ajax({
-                        url:curHostval+url,
+                        url:curServeHost+url,
                         headers:headerparams,
                         type:$.getStringValue(apiInfo.methodType),
                         data:reqdata,
